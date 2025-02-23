@@ -44,10 +44,12 @@ const Navbar = () => {
                         )}
                         
                     </Link>
-                    <button className="hidden md:block">Login | Register</button>
-                    <button className="block md:hidden" aria-label="User Menu">
-                        <FaUserAlt />
-                    </button>
+                    <Link to="/login">
+                        <button className="hidden md:block">Login | Register</button>
+                        <button className="block md:hidden" aria-label="User Menu">
+                            <FaUserAlt />
+                        </button>
+                    </Link>
                 </div>
             </div>
             <div className="flex items-center justify-center py-4 space-x-10 font-bold">
